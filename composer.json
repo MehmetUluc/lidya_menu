@@ -1,0 +1,24 @@
+{
+    "name": "lidyapos/menu",
+    "description": "Menu package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "LidyaPos\\Menu\\": "src"
+        }
+    },
+    "require": {
+        "lidyapos/platform": "*@dev",
+        "lidyapos/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LidyaPos\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "LidyaPos\\Menu\\Facades\\MenuFacade"
+            }
+        }
+    }
+}
